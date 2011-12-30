@@ -1,0 +1,5 @@
+<ul>
+	{% for component in component_list %}
+	        <li><a href="/inventory/component/{{ component.id }}/">{{ component.label }}</a></li>
+	{% endfor %}
+</ul>

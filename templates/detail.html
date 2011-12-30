@@ -1,0 +1,6 @@
+<h1>{{ component.label }}</h1>
+<ul>
+{% for info in component.Usize_set.all %}
+    <li>{{ info.Usize }}</li>
+{% endfor %}
+</ul>

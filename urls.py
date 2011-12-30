@@ -14,4 +14,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^inventory$', 'inventory.views.index'),
+    url(r'^inventory/component/(?P<component_id>\d+)/$','inventory.views.detail'),
+
 )
