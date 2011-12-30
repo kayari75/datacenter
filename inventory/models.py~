@@ -37,7 +37,7 @@ class component(models.Model):
 	hall = models.ForeignKey(hall,blank=True, null=True)
 	iscabinet = models.BooleanField(default=False)
 	Usize = models.IntegerField(blank=True, null=True)
-	rackedin = models.ManyToManyField("self",symmetrical=False,blank=True, null=True)
+	rackedin = models.ManyToManyField("self",symmetrical=False)
 
 	class Admin:
 		list_display = ('component',)
