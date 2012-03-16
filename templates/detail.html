@@ -1,6 +1,6 @@
-<h1>{{ component.label }}</h1>
+<h1>{{ component_detail.label }}</h1>
 <ul>
-{% for info in component.Usize_set.all %}
-    <li>{{ info.Usize }}</li>
+{% for info in component_detail.all %}
+    <li>{{ info }}</li>
 {% endfor %}
 </ul>

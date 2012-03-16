@@ -9,5 +9,4 @@ def index(request):
 
 def detail(request,component_id):
     component_detail = component.objects.get(pk=component_id)
-    print component_detail
     return render_to_response('templates/detail.html', {'component_detail': component_detail})
